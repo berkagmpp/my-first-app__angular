@@ -14,10 +14,10 @@
 <hr>
 
 <!-- string interpolation -->
-<p>{{ serverCreationStatus }}</p>
+<p *ngIf="serverCreated">The server name: {{ serverName }}, is created!</p>
 
 <!-- property binding -->
-<p [innerText]="serverCreationStatus"></p>
+<!-- <p [innerText]="serverCreationStatus"></p> -->
 
 <hr>
 
@@ -25,6 +25,7 @@
 <app-server></app-server>
 <app-server></app-server>
 
+<hr>
 
 <label>User Name: </label>
 <input type="text"
