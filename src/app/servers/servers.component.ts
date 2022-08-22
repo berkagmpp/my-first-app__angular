@@ -45,6 +45,6 @@ export class ServersComponent implements OnInit {
 
     onToggleDetails(event: Event) {
         this.showPassword = !this.showPassword;
-        this.logs.push(this.logs.length + 1);
+        this.logs.push(new Date());
     }
 }
