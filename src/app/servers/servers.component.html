@@ -14,16 +14,13 @@
 <hr>
 
 <!-- string interpolation -->
-<p *ngIf="serverCreated">The server name: {{ serverName }}, is created!</p>
+<!-- <p *ngIf="serverCreated">The server name: {{ serverName }}, is created!</p> -->
 
 <!-- property binding -->
 <!-- <p [innerText]="serverCreationStatus"></p> -->
 
-<hr>
 
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
 
 <hr>
 
