@@ -39,4 +39,10 @@ export class ServersComponent implements OnInit {
     }
 
     username = '';
+
+    showPassword = false;
+
+    onToggleDetails(event: Event) {
+        this.showPassword = !this.showPassword;
+    }
 }

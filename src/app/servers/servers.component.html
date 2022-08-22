@@ -34,3 +34,10 @@
         (click)="username = ''">Reset Username</button>
 
 <hr>
+
+<button 
+    class="btn btn-primary"
+    (click)="onToggleDetails($event)">
+        Display Details
+</button>
+<p *ngIf="showPassword">Secret Password = tuna</p>
