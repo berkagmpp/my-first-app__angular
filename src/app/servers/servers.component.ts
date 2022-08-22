@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { timestamp } from 'rxjs';
 
 
 @Component({
     selector: '[app-servers]',
     templateUrl: './servers.component.html',
-    styleUrls: ['./servers.component.css']
+    styleUrls: ['./servers.component.css'],
+    styles: [`
+        .fifthLog {
+            color: white;
+        }
+    `]
 })
 export class ServersComponent implements OnInit {
     allowNewServer = false;
